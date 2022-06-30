@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Movies catalog Mahmudkhojayev's</title>
+</head>
+
+<body>
+  <div class="container ">
+    <h1 class="text-dark text-center mb-4">Movies catalog</h1>
+    <div class="row mb-5">
+      <div class="col-4 d-flex flex-column">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input class="form-control mb-3" type="text" name="Movies name" placeholder="ave" aria-label="ave" required>
+          <input class="form-control mb-3" type="text" name="Movies number" placeholder="5" aria-label="5">
+          <select class="form-select mb-3" name="Movies catalog" aria-label="Default select example">
+            <option selected>All</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <input class="form-control mb-3" name="Movies free" list="datalistOptions" id="exampleDataList"
+            placeholder="Rating (high to low)">
+          <datalist id="datalistOptions">
+            <option value="high to">
+            <option value="low to">
+          </datalist>
+          <button class="btn btn-primary w-100" type="submit">Search</button>
+        </form>
+
+        <h2 class="mt-4">Bookmarket movies</h2>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p class="">Avengers:Infinity War</p>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </li>
+          <li class="list-group-item">
+            <p>The Avengers</p>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </li>
+          <li class="list-group-item">
+            <p>12 Years a Slave</p>
+            <button class="btn btn-danger" type="button">Remove</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-8">
+        <h3 class="">Search results:39</h3>
+        <div class="alert alert-success" role="alert">
+          Use the form on the left to search for a movie
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <img src="./images/avangers.jpg" class="mb-2 rounded-top img-fluid" alt="avengers picture" width="454" height="207">
+              <div class="card-body">
+                <h5 class="card-title">Avenger: Infinity War</h5>
+                <span class="d-block">
+                  <img src="./images/calendar.png" alt="calender picture" width="20" height="20">
+                  <span>2018</span>
+                </span>
+                <span class="d-block mt-3">
+                  <img class="pb-1" src="./images/star.svg" alt="star picture" width="18" height="20">
+                  <span>8.7</span>
+                </span>
+                <span class="d-flex justify-content-around mt-3">
+                  <a href="#" class="btn btn-outline-primary">Watch trailer</a>
+                  <a href="#" class="btn btn-outline-info">More info</a>
+                  <a href="#" class="btn btn-outline-success">Bookmark</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="./images/ironman.jpg" class="mb-2 rounded-top img-fluid" alt="ironman picture" width="414" height="207">
+              <div class="card-body">
+                <h5 class="card-title">The Avengers</h5>
+                <span class="d-block">
+                  <img src="./images/calendar.png" alt="calender picture" width="20" height="20">
+                  <span>2012</span>
+                </span>
+                <span class="d-block mt-3">
+                  <img class="pb-1" src="./images/star.svg" alt="star picture" width="18" height="20">
+                  <span>8.1</span>
+                </span>
+                <span class="d-flex justify-content-around mt-3">
+                  <a href="#" class="btn btn-outline-primary">Watch trailer</a>
+                  <a href="#" class="btn btn-outline-info">More info</a>
+                  <a href="#" class="btn btn-outline-success">Bookmark</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="pagination justify-content-center mt-5">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
